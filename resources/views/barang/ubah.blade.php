@@ -7,7 +7,7 @@
               </div>
               <!-- /.card-header -->
               <!-- form start -->
-              <form action="/barang/update/{{$barang->id}}" method="POST">
+              <form action="/barang/update/{{$barang->id_b}}" method="POST">
               	@csrf
                 @method('put')
                 <div class="card-body">

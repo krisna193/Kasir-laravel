@@ -40,7 +40,7 @@ class BarangController extends Controller
      }
       public function ubah($id)
      {
-        $barang = Barang::find($id);
+        $barang = Barang::find('id_b',$id);
         return view('barang.ubah',compact(['barang'])); 
      }
       public function update($id, request $request)

@@ -4,8 +4,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\BarangController;
 use App\Http\Controllers\JenisController;
-use App\Http\Controllers\TransaksiController;
 use App\Http\Controllers\SupplierController;
+use App\Http\Controllers\TransaksiController;
+use App\Http\Controllers\TransaksiDetailController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -47,3 +48,12 @@ Route::post('/supplier/simpan',[SupplierController::class,'simpan']);
 Route::get('/supplier/hapus/{id}',[SupplierController::class,'hapus']);
 Route::get('/supplier/ubah/{id}',[SupplierController::class,'ubah']);
 Route::put('/supplier/update/{id}',[SupplierController::class,'update']);
+
+Route::get('/transaksi',[TransaksiController::class,'index']);
+Route::get('/transaksi/tambah',[TransaksiController::class,'tambah']);
+Route::post('/transaksi/simpan',[TransaksiController::class,'simpan']);
+Route::get('/transaksi/hapus/{id}',[TransaksiController::class,'hapus']);
+Route::get('/transaksi/ubah/{id}',[TransaksiController::class,'ubah']);
+Route::put('/transaksi/update/{id}',[TransaksiController::class,'update']);
+
+Route::get('/transaksidetail/detail/{id}',[TransaksiDetailController::class,'index']);

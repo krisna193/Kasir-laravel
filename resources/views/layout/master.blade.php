@@ -195,7 +195,7 @@
                with font-awesome or any other icon font library -->
           <li class="nav-item menu-is-opening menu-open">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <i class="nav-icon fas fa-th"></i>
               <p>
                 MENU
                 <i class="right fas fa-angle-left"></i>
@@ -226,9 +226,18 @@
                   <p>Supplier</p>
                 </a>
               </li>
+            </a>
+          </li>
             </ul>
           </li>
-         
+           <li class="nav-item">
+            <a href="/transaksi" class="nav-link active">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                Transaksi
+                </p>
+              </a>
+                <span class="right badge badge-primary">New</span>
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
@@ -245,12 +254,7 @@
           <div class="col-sm-6">
             <h1>DataTables</h1>
           </div>
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">DataTables</li>
-            </ol>
-          </div>
+         
         </div>
       </div><!-- /.container-fluid -->
     </section>

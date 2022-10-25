@@ -30,7 +30,7 @@
                     <td>{{$row->supplier_nama}}</td>
                     <td>{{$row->harga_jual}}</td>
                     <td>{{$row->barang_status}}</td>
-                    <td><a href="/barang/ubah/{{$row->id}}" class="btn btn-danger">Edit</a>
+                    <td><a href="/barang/ubah/{{$row->id_b}}" class="btn btn-danger">Edit</a>
                         <a href="/barang/hapus/{{$row->id}}" class="btn btn-warning">Delete</a>
                     </td>
                   </tr>
